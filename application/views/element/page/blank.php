@@ -4,7 +4,7 @@
         <h1 class="h3 mb-0 text-gray-800"><?= $page_title ?></h1>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="<?= base_url('dashboard'); ?>">Home</a></li>
-            <li class="breadcrumb-item"><?= $bc_item ?></li>
+            <li class="breadcrumb-item"><?= !$bc_item ? "" : $bc_item ?></li>
             <li class="breadcrumb-item active" aria-current="page"><?= $bc_subitem ?></li>
         </ol>
     </div>

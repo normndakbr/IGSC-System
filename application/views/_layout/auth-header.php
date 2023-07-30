@@ -16,4 +16,4 @@
 
 </head>
 
-<body class="bg-gradient-login">
+<body class="bg-gradient-login" style="background-color: #9DC08B;">
