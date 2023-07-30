@@ -1,87 +1,82 @@
 <!-- Sidebar -->
 <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-        <div class="sidebar-brand-icon">
-            <img src="<?= base_url('assets/'); ?>img/logo/logo2.png">
-        </div>
-        <div class="sidebar-brand-text mx-3">Ruang Admin</div>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" style="background-color: #40513B;" href="index.html">
+        <div class="sidebar-brand-text mx-3">I-GSC System</div>
     </a>
     <hr class="sidebar-divider my-0">
     <li class="nav-item active">
         <a class="nav-link" href="<?= base_url('dashboard'); ?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
+            <span>Home</span></a>
     </li>
     <hr class="sidebar-divider">
     <div class="sidebar-heading">
         Features
     </div>
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap" aria-expanded="true" aria-controls="collapseBootstrap">
-            <i class="far fa-fw fa-window-maximize"></i>
-            <span>Bootstrap UI</span>
+    <li class="nav-item" id="liPeople">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePeople" aria-expanded="true" aria-controls="collapsePeople">
+            <i class="fa fa-users"></i>
+            <span>People</span>
         </a>
-        <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+        <div id="collapsePeople" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Bootstrap UI</h6>
-                <a class="collapse-item" href="<?= base_url('element/alert'); ?>">Alerts</a>
-                <a class="collapse-item" href="<?= base_url('element/button'); ?>">Buttons</a>
-                <a class="collapse-item" href="<?= base_url('element/dropdown'); ?>">Dropdowns</a>
-                <a class="collapse-item" href="<?= base_url('element/modal'); ?>">Modals</a>
-                <a class="collapse-item" href="<?= base_url('element/popovers'); ?>">Popovers</a>
-                <a class="collapse-item" href="<?= base_url('element/progressbar'); ?>">Progress Bars</a>
+                <a class="collapse-item" href="<?= base_url('element/organization_chart'); ?>">Organization Chart</a>
             </div>
         </div>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('element/form'); ?>">
-            <i class="fab fa-fw fa-wpforms"></i>
-            <span>Forms</span>
+    <li class="nav-item" id="liSystem">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSystem" aria-expanded="true" aria-controls="collapseSystem">
+            <i class="fa fa-vector-square"></i>
+            <span>System</span>
         </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true" aria-controls="collapseTable">
-            <i class="fas fa-fw fa-table"></i>
-            <span>Tables</span>
-        </a>
-        <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+        <div id="collapseSystem" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Tables</h6>
-                <a class="collapse-item" href="<?= base_url('element/simpletable'); ?>">Simple Tables</a>
-                <a class="collapse-item" href="<?= base_url('element/datatable'); ?>">DataTables</a>
+                <a class="collapse-item" href="<?= base_url('element/igsc_dashboard'); ?>">I-GSC Dashboard</a>
             </div>
         </div>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('element/uicolors'); ?>">
-            <i class="fas fa-fw fa-palette"></i>
-            <span>UI Colors</span>
+    <li class="nav-item" id="liProcess">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProcess" aria-expanded="true" aria-controls="collapseProcess">
+            <i class="fa fa-server"></i>
+            <span>Process</span>
         </a>
-    </li>
-    <hr class="sidebar-divider">
-    <div class="sidebar-heading">
-        Examples
-    </div>
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePage" aria-expanded="true" aria-controls="collapsePage">
-            <i class="fas fa-fw fa-columns"></i>
-            <span>Pages</span>
-        </a>
-        <div id="collapsePage" class="collapse" aria-labelledby="headingPage" data-parent="#accordionSidebar">
+        <div id="collapseProcess" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">Example Pages</h6>
-                <a class="collapse-item" href="<?= base_url('element/login'); ?>">Login</a>
-                <a class="collapse-item" href="<?= base_url('element/register'); ?>">Register</a>
-                <a class="collapse-item" href="<?= base_url('element/error_page'); ?>">404 Page</a>
-                <a class="collapse-item" href="<?= base_url('element/blank'); ?>">Blank Page</a>
+                <h6 class="collapse-header">Process</h6>
+                <a class="collapse-item" href="<?= base_url('element/ppa'); ?>">PPA</a>
+                <a class="collapse-item" href="<?= base_url('element/ppu'); ?>">PPU</a>
+                <a class="collapse-item" href="<?= base_url('element/plb3'); ?>">PLB3</a>
+                <a class="collapse-item" href="<?= base_url('element/kkl'); ?>">KKL</a>
+                <a class="collapse-item" href="<?= base_url('element/enviro_incident'); ?>">Environmental Incident</a>
+                <a class="collapse-item" href="<?= base_url('element/weekly_report'); ?>">Weekly Report</a>
             </div>
         </div>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('element/charts'); ?>">
-            <i class="fas fa-fw fa-chart-area"></i>
-            <span>Charts</span>
+    <li class="nav-item" id="liImprovement">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseContinual" aria-expanded="true" aria-controls="collapseContinual">
+            <i class="fa fa-users-cog"></i>
+            <span>Continual Improvement</span>
         </a>
+        <div id="collapseContinual" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Continual Improvement</h6>
+                <a class="collapse-item" href="<?= base_url('element/improvement'); ?>">Project Improvement</a>
+            </div>
+        </div>
+    </li>
+    <li class="nav-item" id="liMisc">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseMiscellaneous" aria-expanded="true" aria-controls="collapseMiscellaneous">
+            <i class="fas fa-puzzle-piece"></i>
+            <span>Miscellaneous</span>
+        </a>
+        <div id="collapseMiscellaneous" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Miscellaneous</h6>
+                <a class="collapse-item" href="<?= base_url('element/gallery'); ?>">Gallery</a>
+                <a class="collapse-item" href="<?= base_url('element/publication'); ?>">Publication</a>
+                <a class="collapse-item" href="<?= base_url('element/mailbox'); ?>">Mailbox</a>
+            </div>
+        </div>
     </li>
     <hr class="sidebar-divider">
     <div class="version" id="version-ruangadmin"></div>

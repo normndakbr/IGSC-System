@@ -160,6 +160,161 @@ class Element extends CI_Controller
         $this->load->view('_layout/footer');
     }
 
+    public function organization_chart()
+    {
+        $data['title'] = 'Environmental Organization Chart';
+        $data['page_title'] = 'Environmental Organization Chart';
+        $data['bc_item'] = 'People';
+        $data['bc_subitem'] = 'Environmental Organization Chart';
+
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
+    public function igsc_dashboard()
+    {
+        $data['title'] = 'I-GSC Dashboard';
+        $data['page_title'] = 'I-GSC Dashboard';
+        $data['bc_item'] = 'System';
+        $data['bc_subitem'] = 'I-GSC Dashboard';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
+    public function ppa()
+    {
+        $data['title'] = 'PPA';
+        $data['page_title'] = 'Pengendalian Pencemaran Air';
+        $data['bc_item'] = 'Process';
+        $data['bc_subitem'] = 'Pengendalian Pencemaran Air';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
+    public function ppu()
+    {
+        $data['title'] = 'PPU';
+        $data['page_title'] = 'Pengendalian Pencemaran Udara';
+        $data['bc_item'] = 'Process';
+        $data['bc_subitem'] = 'Pengendalian Pencemaran Udara';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
+    public function plb3()
+    {
+        $data['title'] = 'PLB3';
+        $data['page_title'] = 'Pengolahan Limbah B3 (Bahan Berbahaya & Beracun)';
+        $data['bc_item'] = 'Process';
+        $data['bc_subitem'] = 'Pengolahan Limbah B3';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
+    public function kkl()
+    {
+        $data['title'] = 'KKL';
+        $data['page_title'] = 'Kriteria Kerusakan Lahan';
+        $data['bc_item'] = 'Process';
+        $data['bc_subitem'] = 'Kriteria Kerusakan Lahan';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
+    public function enviro_incident()
+    {
+        $data['title'] = 'Environmental Incident';
+        $data['page_title'] = 'Environmental Incident';
+        $data['bc_item'] = 'Process';
+        $data['bc_subitem'] = 'Environmental Incident';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
+    public function improvement()
+    {
+        $data['title'] = 'Project Improvement';
+        $data['page_title'] = 'Project Improvement';
+        $data['bc_item'] = 'Continual Improvement';
+        $data['bc_subitem'] = 'Project Improvement';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
+    public function gallery()
+    {
+        $data['title'] = 'Gallery';
+        $data['page_title'] = 'Gallery';
+        $data['bc_item'] = 'Miscelaneous';
+        $data['bc_subitem'] = 'Gallery';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
+    public function publication()
+    {
+        $data['title'] = 'Publication';
+        $data['page_title'] = 'Publication';
+        $data['bc_item'] = 'Miscelaneous';
+        $data['bc_subitem'] = 'Publication';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
+    public function mailbox()
+    {
+        $data['title'] = 'Mailbox';
+        $data['page_title'] = 'Mailbox';
+        $data['bc_item'] = 'Miscelaneous';
+        $data['bc_subitem'] = 'Mailbox';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
     public function error_page()
     {
         $data['title'] = '404 Page';
