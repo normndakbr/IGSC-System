@@ -259,6 +259,20 @@ class Element extends CI_Controller
         $this->load->view('_layout/footer');
     }
 
+    public function weekly_report()
+    {
+        $data['title'] = 'Contractor Weekly Report';
+        $data['page_title'] = 'Contractor Weekly Report';
+        $data['bc_item'] = 'Process';
+        $data['bc_subitem'] = 'Contractor Weekly Report';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
     public function improvement()
     {
         $data['title'] = 'Project Improvement';
@@ -307,6 +321,20 @@ class Element extends CI_Controller
         $data['page_title'] = 'Mailbox';
         $data['bc_item'] = 'Miscelaneous';
         $data['bc_subitem'] = 'Mailbox';
+
+        $this->load->view('_layout/header', $data);
+        $this->load->view('_layout/sidebar', $data);
+        $this->load->view('_layout/topbar', $data);
+        $this->load->view('element/page/blank', $data);
+        $this->load->view('_layout/footer');
+    }
+
+    public function notifikasi()
+    {
+        $data['title'] = 'Notifikasi';
+        $data['page_title'] = 'Notifikasi';
+        $data['bc_item'] = '';
+        $data['bc_subitem'] = 'Notifikasi';
 
         $this->load->view('_layout/header', $data);
         $this->load->view('_layout/sidebar', $data);
